@@ -42,4 +42,25 @@ values(current_date(),2002, 1002, 3002, current_date(), 'Angiography uses contra
 
 insert into appointment(DATE,TIME,APPOINTMENT_ID,CREATED_AT,DOCTOR_ID,PATIENT_ID,UPDATED_AT,
 REASON,STATUS)
-values(current_date(),current_time(),4000, current_date(),2001,1001,current_date(),'head ake','SCHEDULED');
+values(current_date(),current_time(),4000, current_date(),2000,1000,current_date(),'head ache','SCHEDULED');
+
+insert into appointment(DATE,TIME,APPOINTMENT_ID,CREATED_AT,DOCTOR_ID,PATIENT_ID,UPDATED_AT,
+REASON,STATUS)
+values(current_date(),current_time(),4001, current_date(),2001,1001,current_date(),'stomach ache','SCHEDULED');
+
+insert into appointment(DATE,TIME,APPOINTMENT_ID,CREATED_AT,DOCTOR_ID,PATIENT_ID,UPDATED_AT,
+REASON,STATUS)
+values(current_date(),current_time(),4002, current_date(),2002,1002,current_date(),'waist pain','SCHEDULED');
+
+
+insert into prescription( ISSUED_DATE,VALID_UNTIL,DOCTOR_ID,PATIENT_ID,PRESCRIPTION_ID,
+DOSAGE,MEDICATION_TEXT,STATUS)
+values(current_date(),current_date(),2000,1000,5000,'2 drips', 'please follow consistently','ISSUED');
+
+insert into prescription( ISSUED_DATE,VALID_UNTIL,DOCTOR_ID,PATIENT_ID,PRESCRIPTION_ID,
+DOSAGE,MEDICATION_TEXT,STATUS)
+values(current_date(),current_date(),2001,1001,5001,'1 drip', 'please follow weekly','ISSUED');
+
+insert into prescription( ISSUED_DATE,VALID_UNTIL,DOCTOR_ID,PATIENT_ID,PRESCRIPTION_ID,
+DOSAGE,MEDICATION_TEXT,STATUS)
+values(current_date(),current_date(),2002,1002,5002,'2 kilograms', 'please follow','DISPENSED');
